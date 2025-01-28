@@ -19,5 +19,5 @@ using LeetCode.Top150Interview.RemoveElement_27;
 
 RemoveDuplicates rmv = new();
 int[] nums = [3, 5, 8, 12, 4, 8, 3, 1, 2, 12];
-rmv.Remove1(nums);
+rmv.Remove2(nums);
 Console.ReadLine();

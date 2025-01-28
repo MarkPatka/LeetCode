@@ -48,7 +48,6 @@ public class RemoveDuplicates
                 nextDistinctElementIndex++;
             }
         }
-
         return nextDistinctElementIndex;
     }
 }
