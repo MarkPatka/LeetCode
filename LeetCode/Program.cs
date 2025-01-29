@@ -17,7 +17,12 @@ using LeetCode.Top150Interview.RemoveElement_27;
 //rmv.Remove2(nums, val);
 //Console.ReadLine();
 
-RemoveDuplicates rmv = new();
-int[] nums = [3, 5, 8, 12, 4, 8, 3, 1, 2, 12];
-rmv.Remove2(nums);
+//LeetCode.Top150Interview.RemoveDuplicatesSortedArray_26.RemoveDuplicates rmv = new();
+//int[] nums = [3, 5, 8, 12, 4, 8, 3, 1, 2, 12];
+//rmv.Remove2(nums);
+//Console.ReadLine();
+
+LeetCode.Top150Interview.RemoveDuplicatesSortedArray_80.RemoveDuplicates rmv = new();
+int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
+rmv.Remove(nums);
 Console.ReadLine();
