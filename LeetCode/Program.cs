@@ -23,6 +23,8 @@ using LeetCode.Top150Interview.RemoveElement_27;
 //Console.ReadLine();
 
 LeetCode.Top150Interview.RemoveDuplicatesSortedArray_80.RemoveDuplicates rmv = new();
-int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
+//[1, 1, 1, 2, 2, 3]
+//[1,2,2]
+int[] nums = [1, 1, 1];
 rmv.Remove(nums);
 Console.ReadLine();
