@@ -1,4 +1,5 @@
-﻿using LeetCode.Top150Interview.MergeSortedArray;
+﻿using LeetCode.Top150Interview.Majority_Element_169;
+using LeetCode.Top150Interview.MergeSortedArray;
 using LeetCode.Top150Interview.RemoveDuplicatesSortedArray_26;
 using LeetCode.Top150Interview.RemoveElement_27;
 
@@ -22,11 +23,18 @@ using LeetCode.Top150Interview.RemoveElement_27;
 //rmv.Remove2(nums);
 //Console.ReadLine();
 
-LeetCode.Top150Interview.RemoveDuplicatesSortedArray_80.RemoveDuplicates rmv = new();
+//LeetCode.Top150Interview.RemoveDuplicatesSortedArray_80.RemoveDuplicates rmv = new();
 //[1, 1, 1, 2, 2, 3]
 //[1,2,2]
 //[1,1,1]
 //[0,0,1,1,1,1,2,3,3]
-int[] nums = [1, 1, 1, 2, 2, 3];
-int res = rmv.Remove1(nums);
+//int[] nums = [1, 1, 1, 2, 2, 3];
+//int res = rmv.Remove1(nums);
+//Console.ReadLine();
+
+MajorityElement majorityElement = new();
+int[] nums1 = [3, 2, 3];
+int[] nums2 = [2, 2, 1, 1, 1, 2, 2];
+majorityElement.MajorityElement1(nums1);
+majorityElement.MajorityElement1(nums2);
 Console.ReadLine();
