@@ -2,6 +2,11 @@
 
 public class RemoveDuplicates
 {
+    /// <summary>
+    /// Incorrect and bad performance, need fix
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
     public int Remove1(int[] nums)
     {
         if (nums.Length <= 2) return nums.Length;
@@ -28,22 +33,11 @@ public class RemoveDuplicates
         }
         return l + 1;
     }
-    public int Remove2(int[] nums)
-    {
-        if (nums.Length <= 2) return nums.Length;
-
-        int writeIndex = 2; 
-        for (int readIndex = 2; readIndex < nums.Length; readIndex++)
-        {
-            if (nums[readIndex] != nums[writeIndex - 2])
-            {
-                nums[writeIndex] = nums[readIndex];
-                writeIndex++;
-            }
-        }
-
-        return writeIndex; 
-    }
+    /// <summary>
+    /// Incorrect and bad performance, need fix
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
     public int Remove3(int[] nums)
     {
         int l = 0;
@@ -68,6 +62,28 @@ public class RemoveDuplicates
         }
         return l;
     }
+    /// <summary>
+    /// Correct, but bad performance
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
+    public int Remove2(int[] nums)
+    {
+        if (nums.Length <= 2) return nums.Length;
+
+        int writeIndex = 2; 
+        for (int readIndex = 2; readIndex < nums.Length; readIndex++)
+        {
+            if (nums[readIndex] != nums[writeIndex - 2])
+            {
+                nums[writeIndex] = nums[readIndex];
+                writeIndex++;
+            }
+        }
+
+        return writeIndex; 
+    }
+
 
 
 }
