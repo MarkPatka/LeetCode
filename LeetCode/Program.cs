@@ -2,6 +2,7 @@
 using LeetCode.Top150Interview.MergeSortedArray;
 using LeetCode.Top150Interview.RemoveDuplicatesSortedArray_26;
 using LeetCode.Top150Interview.RemoveElement_27;
+using LeetCode.Top150Interview.RotateArray_189;
 
 
 //MergeSortedArray msa = new ();
@@ -32,9 +33,15 @@ using LeetCode.Top150Interview.RemoveElement_27;
 //int res = rmv.Remove1(nums);
 //Console.ReadLine();
 
-MajorityElement majorityElement = new();
-int[] nums1 = [3, 2, 3];
-int[] nums2 = [2, 2, 1, 1, 1, 2, 2];
-majorityElement.MajorityElement1(nums1);
-majorityElement.MajorityElement1(nums2);
+//MajorityElement majorityElement = new();
+//int[] nums1 = [3, 2, 3];
+//int[] nums2 = [2, 2, 1, 1, 1, 2, 2];
+//majorityElement.MajorityElement1(nums1);
+//majorityElement.MajorityElement1(nums2);
+//Console.ReadLine();
+
+RotateArray ra = new();
+int[] nums = [1, 2, 3, 4, 5, 6, 7];
+int k = 3;
+ra.Rotate(nums, k);
 Console.ReadLine();
