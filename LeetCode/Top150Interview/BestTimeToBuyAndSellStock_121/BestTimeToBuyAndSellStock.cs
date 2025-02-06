@@ -9,7 +9,7 @@ public class BestTimeToBuyAndSellStock
     /// <returns></returns>
     public int MaxProfit1(int[] prices)
     {
-        int maxProfit = -1;
+        int maxProfit = 0;
         for (int i = 0; i < prices.Length - 1; i++)
         {
             for (int j = i + 1; j < prices.Length; j++)
