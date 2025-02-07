@@ -1,4 +1,4 @@
-﻿using LeetCode.Top150Interview.BestTimeToBuyAndSellStock_121;
+﻿using LeetCode.Top150Interview.BestTimeToBuyAndSellStock_122;
 using LeetCode.Top150Interview.Majority_Element_169;
 using LeetCode.Top150Interview.MergeSortedArray;
 using LeetCode.Top150Interview.RemoveDuplicatesSortedArray_26;
@@ -48,6 +48,14 @@ using LeetCode.Top150Interview.RotateArray_189;
 //Console.ReadLine();
 
 BestTimeToBuyAndSellStock bs = new();
-int[] prices = [7, 6, 4, 3, 1];
-int res = bs.MaxProfit3(prices);
+int[] prices1 = [7, 1, 5, 3, 6, 4];
+int[] prices2 = [1, 2, 3, 4, 5];
+int[] prices3 = [7, 6, 4, 3, 1];
+
+int res1 = bs.MaxProfit(prices1);
+int res2 = bs.MaxProfit(prices2);
+int res3 = bs.MaxProfit(prices3);
+
+
+
 Console.ReadLine();
