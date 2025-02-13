@@ -35,8 +35,6 @@ public class JumpGame
         }
         return true;
     }
-
-
     static bool CanJumpOver(int index, int[] nums)
     {
         int jumpMin = 2;

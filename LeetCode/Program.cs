@@ -1,5 +1,6 @@
 ﻿using LeetCode.Top150Interview.BestTimeToBuyAndSellStock_122;
 using LeetCode.Top150Interview.JumpGame_55;
+using LeetCode.Top150Interview.JumpGame2_45;
 using LeetCode.Top150Interview.Majority_Element_169;
 using LeetCode.Top150Interview.MergeSortedArray;
 using LeetCode.Top150Interview.RemoveDuplicatesSortedArray_26;
@@ -78,4 +79,28 @@ using LeetCode.Top150Interview.RotateArray_189;
 //bool res8  = jg.CanJump_1(jumps8);
 //bool res9  = jg.CanJump_1(jumps9);
 //bool res10 = jg.CanJump_1(jumps10);
+
+
+JumpGame2 jg2 = new();
+int[] nums1 = [2, 3, 1, 1, 4];
+int[] nums2 = [2, 5, 0, 0];
+int[] nums3 = [2, 0];
+int[] nums4 = [3, 2, 1, 0, 4];
+int[] nums5 = [0, 1];
+int[] nums6 = [1, 1, 1, 0];
+int[] nums7 = [0];
+int[] nums8 = [1];
+int[] nums9 = [1, 2, 0, 1];
+int[] nums10 = [3, 0, 8, 2, 0, 0, 1];
+
+int res1 = jg2.Jump(nums1);
+int res2 = jg2.Jump(nums2);
+int res3 = jg2.Jump(nums3);
+int res4 = jg2.Jump(nums4);
+int res5 = jg2.Jump(nums5);
+int res6 = jg2.Jump(nums6);
+int res7 = jg2.Jump(nums7);
+int res8 = jg2.Jump(nums8);
+int res9 = jg2.Jump(nums9);
+int res10 = jg2.Jump(nums10);
 Console.ReadLine();
