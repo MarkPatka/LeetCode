@@ -1,13 +1,13 @@
 ﻿namespace LeetCode.Top150Interview.JumpGame2_45;
 
-public class JumpGame2
+public partial class Solution
 {
     /// <summary>
     /// Bad performance and memory consumption
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public int Jump(int[] nums)
+    public int JumpGame2(int[] nums)
     {
         int target = nums.Length - 1;
         if (target > 1)

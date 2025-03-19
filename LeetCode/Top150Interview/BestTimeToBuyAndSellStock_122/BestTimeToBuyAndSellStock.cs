@@ -1,8 +1,8 @@
 ﻿namespace LeetCode.Top150Interview.BestTimeToBuyAndSellStock_122;
 
-public class BestTimeToBuyAndSellStock
+public partial class Solution
 {
-    public int MaxProfit(int[] prices)
+    public int BestTimeToBuyAndSellStock(int[] prices)
     {
         int res = 0;
         if (prices.Length < 2) return res;

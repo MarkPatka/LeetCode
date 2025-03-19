@@ -1,8 +1,8 @@
 ﻿namespace LeetCode.Top150Interview.HIndex_274;
 
-public class HIndex
+public partial class Solution
 {
-    public int GetHIndex(int[] citations)
+    public int HIndex(int[] citations)
     {
         CountingSortDesc(citations);
 

@@ -1,25 +1,8 @@
 ﻿namespace LeetCode.Top150Interview.Majority_Element_169;
 
-public class MajorityElement
+public partial class Solution
 {
-    /// <summary>
-    /// Bad
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public int MajorityElement1(int[] nums)
-    {
-        Array.Sort(nums);
-        return nums[nums.Length / 2];
-    }
-
-
-    /// <summary>
-    /// Better
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public int MajorityElement2(int[] nums)
+    public int MajorityElement(int[] nums)
     {
         Dictionary<int, int> map = [];
         int limit = nums.Length / 2;

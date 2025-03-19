@@ -1,8 +1,8 @@
 ﻿namespace LeetCode.Top150Interview.RotateArray_189;
 
-public class RotateArray
+public partial class Solution
 {
-    public void Rotate(int[] nums, int k)
+    public void RotateArray(int[] nums, int k)
     {
         if (nums.Length == 0 || k == 0) return;
         k %= nums.Length; // Handle cases where k > array length
