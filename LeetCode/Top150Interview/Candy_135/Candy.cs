@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Top150Interview.Candy_135;
+﻿using System.Net.Http.Headers;
+
+namespace LeetCode.Top150Interview.Candy_135;
 
 public partial class Solution
 {
@@ -16,25 +18,30 @@ public partial class Solution
         int[] dist = new int[l];
         Array.Fill(dist, 1);
 
-        var leftBorder = ProcessBorders(ratings[0], ratings[1]);
-        dist[0] += leftBorder.l;
-        dist[1] += leftBorder.r;
-
-        var rightBorder = ProcessBorders(ratings[^2], ratings[^1]);
-        dist[^2] += rightBorder.l;
-        dist[^1] += rightBorder.r;
-
-        for (int i = 1; i < l - 1; i++)
+        for (int i = 1; i < l; i++)
         {
-            int leftPoint = ratings[i];
-            int rightPoint = ratings[i + 1];
-
-            if (leftPoint != rightPoint)
+            if (ratings[i] > ratings[i - 1])
             {
                 dist[i]++;
             }
         }
-        return 0;
+        for (int i = l - 2; i >= 0; i--)
+        {
+            if (ratings[i] > ratings[i + 1])
+            {
+                dist[i]++;
+            }
+        }
+
+        if (ratings[0] > ratings[1]) dist[0]++;
+        if (ratings[^2] < ratings[^1]) dist[^1]++;
+
+        for (int i = 0; i < l; i++)
+        {
+            if (dist[i] == 0) dist[i]++;
+        }
+
+        return dist.Sum();
     }
 
     private (int l, int r) ProcessBorders(int left, int right)
