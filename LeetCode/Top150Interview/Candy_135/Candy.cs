@@ -1,6 +1,4 @@
-﻿using System.Net.Http.Headers;
-
-namespace LeetCode.Top150Interview.Candy_135;
+﻿namespace LeetCode.Top150Interview.Candy_135;
 
 public partial class Solution
 {

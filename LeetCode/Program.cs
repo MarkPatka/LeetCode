@@ -1,17 +1,10 @@
 ﻿
-using LeetCode.Top150Interview.Candy_135;
+using LeetCode.Top150Interview.TrappingRainWater_42;
 
 Console.WriteLine("LeetCode");
 
-int[] input1 = [1, 0, 2];
-int[] input2 = [1, 2, 2];
-int[] input3 = [1, 3, 5];
-int[] input4 = [1, 2, 8, 13, 21, 4, 5];
-int[] input5 = [1, 2, 3, 4];
-
+int[] input1 = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
 Solution solution = new Solution();
-solution.Candy(input1);
-solution.Candy(input2); 
-solution.Candy(input3); 
-solution.Candy(input4);
-solution.Candy(input5);
+
+solution.Trap(input1);
+
