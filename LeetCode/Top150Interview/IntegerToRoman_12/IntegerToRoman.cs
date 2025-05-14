@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design;
-
-namespace LeetCode.Top150Interview.IntegerToRoman_12;
+﻿namespace LeetCode.Top150Interview.IntegerToRoman_12;
 
 public partial class Solution
 {
