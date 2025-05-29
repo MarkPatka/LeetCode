@@ -4,5 +4,7 @@ Console.WriteLine("*** LeetCode PlayGroud ***");
 
 Solution solution = new Solution();
 
-string s = solution.ZigzagConversion("ABCDE", 4);
+string s = solution.ZigzagConversion_2("PAYPALISHIRING", 3);
+
+
 Console.ReadLine();
