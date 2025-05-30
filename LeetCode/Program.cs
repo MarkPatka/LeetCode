@@ -1,10 +1,10 @@
-﻿using LeetCode.Top150Interview.ZigzagConversion_6;
+﻿using LeetCode.Top150Interview.FindTheIndexOfTheFirstOccurenceInString_28;
 
 Console.WriteLine("*** LeetCode PlayGroud ***");
 
 Solution solution = new Solution();
 
-string s = solution.ZigzagConversion_2("PAYPALISHIRING", 3);
+int idx = solution.FindTheIndexOfTheFirstOccurenceInString("leetcode", "leeto");
 
 
 Console.ReadLine();
