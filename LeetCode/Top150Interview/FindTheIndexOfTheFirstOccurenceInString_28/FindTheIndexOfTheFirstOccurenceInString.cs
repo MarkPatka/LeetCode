@@ -11,9 +11,7 @@ public partial class Solution
             return -1;
         }
 
-        int haystackPointer = 0;
         int needlePointer = 0;
-
         for (int i = 0; i < haystack.Length; i++)
         {
             if ((haystack.Length - i) < needle.Length)
@@ -21,7 +19,7 @@ public partial class Solution
                 return -1;
             }
 
-            haystackPointer = i;
+            int haystackPointer = i;
             while (haystack[haystackPointer] == needle[needlePointer])
             {
                 haystackPointer++;

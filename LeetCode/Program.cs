@@ -1,12 +1,9 @@
-﻿using LeetCode.Top150Interview.TextJustification_68;
+﻿using LeetCode.Top150Interview.ValidPalindrome_125;
 
 Console.WriteLine("*** LeetCode PlayGroud ***");
 
 Solution solution = new Solution();
 
-string[] words = ["What", "must", "be", "shall", "be."];
-int maxWidth = 5;
-
-var result = solution.FullJustify(words, maxWidth);
+var result = solution.IsPalindrome("0P");
 
 Console.ReadLine();
