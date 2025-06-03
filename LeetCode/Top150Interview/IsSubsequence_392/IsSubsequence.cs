@@ -7,20 +7,28 @@ public partial class Solution
         if (t.Length < s.Length) return false;
         if (s.Length == 0) return true;
 
-        int tIndex = 0;
+        int left = -1;
         foreach (char c in s)
         {
-            while (tIndex < t.Length && t[tIndex] != c)
-            {
-                tIndex++;
-            }
-
-            if (tIndex == t.Length)
+            int right = GetIndexOfFirstOccurrenceOfChar(t, c, left + 1);
+            if (right < 0)
             {
                 return false;
             }
-            tIndex++;
+            left = right;
         }
         return true;
+    }
+
+    public int GetIndexOfFirstOccurrenceOfChar(string source, char target, int index)
+    {
+        for (; index < source.Length; index++) 
+        {
+            if (source[index] == target)
+            {
+                return index;
+            }
+        }
+        return -1;
     }
 }
