@@ -1,9 +1,9 @@
-﻿using LeetCode.Top150Interview.IsSubsequence_392;
+﻿using LeetCode.Top150Interview.TwoSum_167;
 
 Console.WriteLine("*** LeetCode PlayGroud ***");
 
 Solution solution = new Solution();
 
-var result = solution.IsSubsequence("b", "c");
+var result = solution.TwoSum([2, 7, 11, 5], 9);
 
 Console.ReadLine();
