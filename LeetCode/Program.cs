@@ -1,9 +1,8 @@
-﻿using LeetCode.Top150Interview.TwoSum_167;
+﻿using LeetCode.Top150Interview.ContainerWithMostWater_11;
 
 Console.WriteLine("*** LeetCode PlayGroud ***");
 
-Solution solution = new Solution();
+Solution solution = new();
 
-var result = solution.TwoSum([2, 7, 11, 5], 9);
 
 Console.ReadLine();

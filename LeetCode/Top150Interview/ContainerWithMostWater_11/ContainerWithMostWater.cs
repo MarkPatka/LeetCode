@@ -2,13 +2,73 @@
 
 public partial class Solution
 {
-    public int MaxArea(int[] height)
+    /// <summary>
+    /// The most efficient and uses two-pointers approach more clearly but less obvious
+    /// </summary>
+    public int MaxArea2(int[] height)
     {
-        int leftLine = 0;
-        int rightLine = height.Length - 1;
+        int maxArea = 0;
+        int left = 0;
+        int right = height.Length - 1;
 
-        for (; leftLine < rightLine; le)
+        while (left < right)
+        {
+            int currentHeight = Math.Min(height[left], height[right]);
+            int currentWidth = right - left;
+            int currentArea = currentHeight * currentWidth;
 
-        return 0;
+            maxArea = Math.Max(maxArea, currentArea);
+
+            if (height[left] < height[right])
+            {
+                left++;
+            }
+            else
+            {
+                right--;
+            }
+        }
+
+        return maxArea;
+    }
+
+    /// <summary>
+    /// More straightforward
+    /// </summary>
+    public int MaxArea1(int[] height)
+    {
+        int left = 0;
+        int right = height.Length - 1;
+
+        int maxSq = -1;
+
+        for (; right > left; right--)
+        {
+            maxSq = CheckMax(height, left, right, maxSq);
+
+            if (height[right] >= height[left])
+            {
+                for (; left < right; left++)
+                {
+                    maxSq = CheckMax(height, left, right, maxSq);
+
+                    if (height[left] >= height[right])
+                    {
+                        break;
+                    }
+                }
+            }
+        }
+
+        return maxSq;
+    }
+
+    private static int CheckMax(int[] height, int left, int right, int maxSq)
+    {
+        int x = right - left;
+        int y = Math.Min(height[left], height[right]);
+        int sq = x * y;
+        if (maxSq < sq) maxSq = sq;
+        return maxSq;
     }
 }
