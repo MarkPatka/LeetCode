@@ -3,7 +3,7 @@
 public partial class Solution
 {
     /// <summary>
-    /// The most efficient and uses two-pointers approach more clearly but less obvious
+    /// The most efficient and uses two-pointers approach more clearly
     /// </summary>
     public int MaxArea2(int[] height)
     {
@@ -33,7 +33,7 @@ public partial class Solution
     }
 
     /// <summary>
-    /// More straightforward
+    /// More straightforward, less efficient
     /// </summary>
     public int MaxArea1(int[] height)
     {
