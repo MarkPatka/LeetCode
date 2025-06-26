@@ -30,7 +30,7 @@ In this case, the max area of water (blue section) the container can contain is 
 `1`
 
 
-# Constraints:  
+## Constraints:  
 
 - n == height.length
 - 2 <= n <= 105
