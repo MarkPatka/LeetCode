@@ -1,17 +1,12 @@
-﻿using LeetCode.Top150Interview.LongestSubstringWithoutRepeatingCharacters_3;
+﻿using LeetCode.Top150Interview.SubstringwithConcatenationofAllWords_30;
 
 Console.WriteLine("*** LeetCode PlayGroud ***");
 
 Solution solution = new();
 
-//int res1 = solution.LengthOfLongestSubstring("abcabcbb");
-//
-int res2 = solution.LengthOfLongestSubstring("pwwkew");
-//
-int res3 = solution.LengthOfLongestSubstring("aab");
-//
-int res4 = solution.LengthOfLongestSubstring("dvdf");
-//
-int res5 = solution.LengthOfLongestSubstring("nfpdmpi");
+string s = "barfoothefoobarman";
+string[] words = ["foo", "bar"];
+
+var res = solution.FindSubstring(s, words);
 
 Console.ReadLine();
