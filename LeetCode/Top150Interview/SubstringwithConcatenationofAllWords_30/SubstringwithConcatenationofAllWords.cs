@@ -1,8 +1,4 @@
-﻿using System.Data;
-using System.Net;
-using System.Text;
-
-namespace LeetCode.Top150Interview.SubstringwithConcatenationofAllWords_30;
+﻿namespace LeetCode.Top150Interview.SubstringwithConcatenationofAllWords_30;
 
 public partial class Solution
 {
@@ -11,7 +7,8 @@ public partial class Solution
     /// - n is the length of string s
     /// - m is the number of words
     /// - k is the length of each word
-    /// And will be running abour 2 sec.
+    /// And will be running abour 2 sec
+    /// Which is to overhead the time limits
     /// </summary>
     public IList<int> FindSubstring_1(string s, string[] words)
     {
@@ -90,6 +87,7 @@ public partial class Solution
                         currentCount[currentWord] = ++value;
                     else
                         currentCount[currentWord] = 1;
+
                     count++;
 
                     // If we have more occurrences than needed, move left pointer

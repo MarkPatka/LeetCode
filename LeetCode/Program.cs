@@ -1,12 +1,13 @@
-﻿using LeetCode.Top150Interview.SubstringwithConcatenationofAllWords_30;
+﻿using LeetCode.Top150Interview.MinimumWindowSubstring_76;
 
 Console.WriteLine("*** LeetCode PlayGroud ***");
 
-Solution solution = new();
+Solution solution = new Solution();
 
-string s = "barfoothefoobarman";
-string[] words = ["foo", "bar"];
-
-var res = solution.FindSubstring(s, words);
+string s = "ADOBECODEBANC", t = "ABC";
+var result = solution.MinWindow_2(s, t);
 
 Console.ReadLine();
+
+
+
