@@ -3,9 +3,45 @@
 public partial class Solution
 {
     /// <summary>
-    /// The Most efficient one
+    /// The most efficient one
     /// </summary>
     public bool IsValidSudoku(char[][] board)
+    {
+        // 9 masks for rows, cols, and 3×3 blocks
+        int[] rows = new int[9];
+        int[] cols = new int[9];
+        int[] blocks = new int[9];         // block index = (r / 3) * 3 + (c / 3)
+
+        for (int r = 0; r < 9; r++)
+        {
+            for (int c = 0; c < 9; c++)
+            {
+                char ch = board[r][c];
+                if (ch == '.') continue;           // empty cell, skip
+
+                int bit = 1 << (ch - '1');         // map '1'..'9' → bit 0..8
+                int b = (r / 3) * 3 + (c / 3);   // 0..8 block id
+
+                // if bit already set anywhere ⇒ duplicate
+                if ((rows[r] & bit) != 0 ||
+                     (cols[c] & bit) != 0 ||
+                     (blocks[b] & bit) != 0)
+                    return false;
+
+                // mark presence
+                rows[r] |= bit;
+                cols[c] |= bit;
+                blocks[b] |= bit;
+            }
+        }
+        return true;   // no conflicts found
+
+    }
+
+    /// <summary>
+    /// Optimal solution
+    /// </summary>
+    public bool IsValidSudoku_1(char[][] board)
     {
         var row = new HashSet<char>[9];
         var column = new HashSet<char>[9];
@@ -43,7 +79,7 @@ public partial class Solution
     /// <summary>
     /// More straightforward
     /// </summary>
-    public bool IsValidSudoku_1(char[][] board)
+    public bool IsValidSudoku_2(char[][] board)
     {
         // Check SubBlocks 3x3
         char[,] subBox = new char[3, 3];
