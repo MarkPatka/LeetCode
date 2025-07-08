@@ -10,12 +10,20 @@
 
   <ItemGroup>
     <None Remove="Top150Interview\ContainerWithMostWater_11\Example.jpg" />
+    <None Remove="Top150Interview\SpiralMatrix_54\Example1.jpg" />
+    <None Remove="Top150Interview\SpiralMatrix_54\Example2.jpg" />
     <None Remove="Top150Interview\TrappingRainWater_42\example.png" />
     <None Remove="Top150Interview\ValidSudoku_36\ValidSudoku.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Top150Interview\ContainerWithMostWater_11\Example.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Top150Interview\SpiralMatrix_54\Example1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Top150Interview\SpiralMatrix_54\Example2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Top150Interview\TrappingRainWater_42\Example.png">

@@ -1,34 +1,21 @@
-﻿using LeetCode.Top150Interview.ValidSudoku_36;
+﻿using LeetCode.Top150Interview.SpiralMatrix_54;
 
 Console.WriteLine("*** LeetCode PlayGroud ***");
 
 Solution solution = new Solution();
 
-char[][] board1 = 
-    [['5','3','.','.','7','.','.','.','.']
-    ,['6','.','.','1','9','5','.','.','.']
-    ,['.','9','8','.','.','.','.','6','.']
-    ,['8','.','.','.','6','.','.','.','3']
-    ,['4','.','.','8','.','3','.','.','1']
-    ,['7','.','.','.','2','.','.','.','6']
-    ,['.','6','.','.','.','.','2','8','.']
-    ,['.','.','.','4','1','9','.','.','5']
-    ,['.','.','.','.','8','.','.','7','9']];
+int[][] matrix1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+int[][] matrix2 = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]];
 
-char[][] board2 =
-    [['8','3','.','.','7','.','.','.','.']
-    ,['6','.','.','1','9','5','.','.','.']
-    ,['.','9','8','.','.','.','.','6','.']
-    ,['8','.','.','.','6','.','.','.','3']
-    ,['4','.','.','8','.','3','.','.','1']
-    ,['7','.','.','.','2','.','.','.','6']
-    ,['.','6','.','.','.','.','2','8','.']
-    ,['.','.','.','4','1','9','.','.','5']
-    ,['.','.','.','.','8','.','.','7','9']];
+int[][] matrix3 = [[1],[2],[3],[4]];
+int[][] matrix4 = [[1, 2, 3 ,4]];
+int[][] matrix5 = [[1]];
 
-var result1 = solution.IsValidSudoku(board1);
-var result2 = solution.IsValidSudoku(board2);
-
+//var res1 = solution.SpiralOrder(matrix1);
+//var res2 = solution.SpiralOrder(matrix2);
+var res3 = solution.SpiralOrder(matrix3);
+var res4 = solution.SpiralOrder(matrix4);
+var res5 = solution.SpiralOrder(matrix5);
 Console.ReadLine();
 
 

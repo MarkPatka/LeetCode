@@ -24,13 +24,15 @@ public partial class Solution
 
                 // if bit already set anywhere ⇒ duplicate
                 if ((rows[r] & bit) != 0 ||
-                     (cols[c] & bit) != 0 ||
-                     (blocks[b] & bit) != 0)
+                    (cols[c] & bit) != 0 ||
+                    (blocks[b] & bit) != 0)
+                {
                     return false;
+                }
 
                 // mark presence
-                rows[r] |= bit;
-                cols[c] |= bit;
+                rows[r]   |= bit;
+                cols[c]   |= bit;
                 blocks[b] |= bit;
             }
         }
