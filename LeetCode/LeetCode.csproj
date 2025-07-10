@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Top150Interview\ContainerWithMostWater_11\Example.jpg" />
+    <None Remove="Top150Interview\RotateImage_48\RotateImage2.jpg" />
     <None Remove="Top150Interview\SpiralMatrix_54\Example1.jpg" />
     <None Remove="Top150Interview\SpiralMatrix_54\Example2.jpg" />
     <None Remove="Top150Interview\TrappingRainWater_42\example.png" />
@@ -19,6 +20,9 @@
   <ItemGroup>
     <Resource Include="Top150Interview\ContainerWithMostWater_11\Example.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Top150Interview\RotateImage_48\RotateImage2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Top150Interview\SpiralMatrix_54\Example1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -32,6 +36,12 @@
     <Resource Include="Top150Interview\ValidSudoku_36\ValidSudoku.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Top150Interview\RotateImage_48\RotateImage1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
