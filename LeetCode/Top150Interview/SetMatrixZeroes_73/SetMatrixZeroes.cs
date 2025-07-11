@@ -136,7 +136,7 @@ public partial class Solution
 
     /// <summary>
     /// The best one implementation and very clever solution with a 256x256 bitmask for pointing the zeros
-    /// It takes time to figure out what is foing on but it worth to get these technics
+    /// It takes time to figure out what is going on but it worth to get these technics
     /// </summary>
     public unsafe void SetZeroes_3(int[][] matrix)
     {
