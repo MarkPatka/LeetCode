@@ -93,9 +93,12 @@ public partial class Solution
     }
 
     /// <summary>
-    /// Uses List(int, int) allocation which the worst decision
-    /// This solution doesn`t follow up the space constraints
-    /// But its readable and straightforward
+    /// Uses List(int, int) heap allocation which the worst decision.
+    /// If multiple zeros exist in the same row/column, it reprocesses the same rows/columns repeatedly
+    ///     First loop:  O(m×n) to find zeros.
+    ///     Second loop: For each zero, does O(m) + O(n) work(setting rows/columns).
+    ///     Worst case:  O(m×n × (m+n)) → O(n³) for square matrices.
+    /// Allocates new arrays for entire rows (slow, triggers GC) in "matrix[i] = new int[jLen];".
     /// </summary>
     public void SetZeroes_1(int[][] matrix)
     {
@@ -120,14 +123,14 @@ public partial class Solution
             j++;
         }
 
-        foreach (var position in zerosPositions)
+        foreach (var (i, j) in zerosPositions)
         {
             foreach (var row in matrix)
             {
-                row[position.j] = 0;
+                row[j] = 0;
             }
 
-            matrix[position.i] = new int[jLen];
+            matrix[i] = new int[jLen];
         }
     }
 
