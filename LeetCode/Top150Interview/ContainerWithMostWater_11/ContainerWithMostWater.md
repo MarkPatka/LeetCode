@@ -9,7 +9,7 @@ Find two lines that together with the x-axis form a container, such that the con
 Notice that you may not slant the container.
 
 ## Example 1:
-![Example Image](example.jpg)  
+![Example Image](ContainerWithMostWater_Example.jpg)  
 
 **Input:**  
 `height = [1,8,6,2,5,4,8,3,7]`  
