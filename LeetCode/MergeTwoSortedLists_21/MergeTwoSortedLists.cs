@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace LeetCode.MergeTwoSortedLists_21;
+﻿namespace LeetCode.MergeTwoSortedLists_21;
 
 public partial class Solution
 {
