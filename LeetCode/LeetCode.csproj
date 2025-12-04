@@ -9,40 +9,40 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Top150Interview\SetMatrixZeroes_73\SetMatrixZeroes_Example1.jpg" />
-    <None Remove="Top150Interview\SetMatrixZeroes_73\SetMatrixZeroes_Example2.jpg" />
-    <None Remove="Top150Interview\ValidSudoku_36\ValidSudoku.png" />
+    <None Remove="SetMatrixZeroes_73\SetMatrixZeroes_Example1.jpg" />
+    <None Remove="SetMatrixZeroes_73\SetMatrixZeroes_Example2.jpg" />
+    <None Remove="ValidSudoku_36\ValidSudoku.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Top150Interview\ContainerWithMostWater_11\ContainerWithMostWater_Example.jpg">
+    <Resource Include="ContainerWithMostWater_11\ContainerWithMostWater_Example.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Top150Interview\RotateImage_48\RotateImage_Example2.jpg">
+    <Resource Include="RotateImage_48\RotateImage_Example2.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Top150Interview\SetMatrixZeroes_73\SetMatrixZeroes_Example1.jpg">
+    <Resource Include="SetMatrixZeroes_73\SetMatrixZeroes_Example1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Top150Interview\SetMatrixZeroes_73\SetMatrixZeroes_Example2.jpg">
+    <Resource Include="SetMatrixZeroes_73\SetMatrixZeroes_Example2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Top150Interview\SpiralMatrix_54\SpiralMatrix_Example1.jpg">
+    <Resource Include="SpiralMatrix_54\SpiralMatrix_Example1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Top150Interview\SpiralMatrix_54\SpiralMatrix_Example2.jpg">
+    <Resource Include="SpiralMatrix_54\SpiralMatrix_Example2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Top150Interview\TrappingRainWater_42\TrappingRainWater_Example.png">
+    <Resource Include="TrappingRainWater_42\TrappingRainWater_Example.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Top150Interview\ValidSudoku_36\ValidSudoku.png">
+    <Resource Include="ValidSudoku_36\ValidSudoku.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Top150Interview\RotateImage_48\RotateImage_Example1.jpg">
+    <None Update="RotateImage_48\RotateImage_Example1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

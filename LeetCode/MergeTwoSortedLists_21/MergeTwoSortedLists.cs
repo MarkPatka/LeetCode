@@ -2,6 +2,12 @@
 
 public partial class Solution
 {
+    public class ListNode(int val = 0, ListNode? next = null)
+    {
+        public int val = val;
+        public ListNode? next = next;
+    }
+
     public ListNode MergeTwoLists(ListNode? list1, ListNode? list2)
     {
         var head = new ListNode();
@@ -25,9 +31,4 @@ public partial class Solution
         current!.next = list1 is null ? list2 : list1; // если один из списков закончился, прикрепляем оставшуюся часть другого списка к current.next
         return head.next!; // Возврат head.next — чтобы пропустить вспомогательный пустой узел
     }
-}
-public class ListNode(int val = 0, ListNode? next = null)
-{
-    public int val = val;
-    public ListNode? next = next;
 }
