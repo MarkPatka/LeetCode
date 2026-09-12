@@ -1,14 +1,9 @@
-﻿namespace LeetCode.CountCompleteTreeNode_222;
+﻿using LeetCode.Common;
+
+namespace LeetCode.CountCompleteTreeNode_222;
 
 public partial class Solution
 {
-    public class TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null) 
-    {
-        public int val = val;
-        public TreeNode? left = left;
-        public TreeNode? right = right;
-    }
-
     public int CountNodes(TreeNode? root)
     {
         int lHeight = CountLeftChildren(root);
