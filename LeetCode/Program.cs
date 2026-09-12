@@ -1,15 +1,11 @@
-﻿using LeetCode.SqrtX_69;
+﻿using LeetCode.FirstUniqueCharacterInString_387;
+
 
 Console.WriteLine("*** LeetCode PlayGroud ***");
 
 Solution solution = new Solution();
-
-solution.MySqrt(2);
-
-
-
-
-
+var result = solution.FirstUniqChar("loveleetcode");
+Console.WriteLine(result);
 Console.ReadLine();
 
 

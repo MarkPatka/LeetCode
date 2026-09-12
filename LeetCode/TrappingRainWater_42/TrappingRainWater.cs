@@ -2,13 +2,17 @@
 
 public partial class Solution
 {
+
+
     /// It`s need to improve performance
     /// But the solution logic is correct
     public int Trap(int[] height)
     {
+
         int len = height.Length;
         int max = height.Max();
         int sum = 0;
+
 
         for (int j = 0; j <= max; j++)
         {
